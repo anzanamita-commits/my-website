@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио начинающего веб-разработчика">
+    <title>Лубсанова Анзана — веб-разработчик</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+        <header>
+    <div class="header-controls">
+    <!-- Кнопка уменьшения текста -->
+    <button id="font-decrease" title="Уменьшить текст">А-</button>
+    
+    <!-- Кнопка увеличения текста -->
+    <button id="font-increase" title="Увеличить текст">А+</button>
+    
+    <!-- Твоя кнопка темы (сюда мы добавили класс для JS, чтобы менять иконки) -->
+    <button id="theme-toggle" title="Сменить тему">🌙</button>
+    
+    <!-- Твоя кнопка озвучки -->
+    <button id="speak-btn" title="Озвучить текст">🔊</button>
+</div>
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Способности</a>
+        <a href="#projects">Моя история</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+    <h1>Лубсанова Анзана</h1>
+    <p>Герой</p>
+</header>
+    <main>
+        <!-- ОБО МНЕ -->
+        <section id="about">
+            <img src="foto.webp" alt="Фото Лубсанова анзанаааа" width="160" height="160">
+            <div>
+                <h2>Обо мне</h2>
+                <p>Я, Лубсанова Анзана, в повседневное время я спасаю мир и дарю справедливость. А так, я студент 3-го курса колледжа БГУ, учусь на специальности " Информационные системы и программирование". 
+                    Люблю размышлять о мире всего и не о чем. 
+                </p>
+            </div>
+        </section>
+
+        <!-- НАВЫКИ -->
+        <section id="skills">
+            <h2>Способности</h2>
+            <ul>
+                <li>Умение летать</li>
+                <li>Могу засыпать в любо время и в любом месте</li>
+                <li>Умею вешать  лапшу на уши </li>
+                <li>Могу удалить готовую работу и не сохранить</li>
+            </ul>
+        </section>
+
+        <!-- ПРОЕКТЫ -->
+        <section id="projects">
+            <h2>Моя история</h2>
+            <article>
+                <center><h3> Я летаю</h3>
+                 <img src="я летаю.jpg" alt="Фото Лубсанова анзанаааа" width="250" height="250">
+                </center>
+                
+            </article>
+            <article>
+                <center><h3>Я сплю </h3>
+                <img src="сплю.jpg" alt="Фото Лубсанова анзанаааа" width="160" height="160">
+                </center>
+            </article>
+            <article>
+                <center><h3>Я человек паук</h3>
+                <img src="паук.jpg" alt="Фото Лубсанова анзанаааа" width="200" height="200"></center>
+                
+            </article>
+            <article>
+                <center><h3> майнкрафт</h3>
+                 <img src="майн.jpg" alt="Фото Лубсанова анзанаааа" width="250" height="250"></center>
+                
+                
+            </article>
+            <article>
+                <center><h3> устала после битвы </h3>
+                 <img src="лежу.jpg" alt="Фото Лубсанова анзанаааа" width="160" height="160"></center>
+                
+            </article>
+            <article>
+                <center><h3> меня окружили </h3>
+                 <img src="динозавр.jpg" alt="Фото Лубсанова анзанаааа" width="200" height="200"></center>
+                
+            </article>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contacts">
+            <h2>Связаться со мной</h2>
+            <form id="contact-form" action="https://formspree.io/f/mdeeznvb" method="POST">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="you@mail.ru" required>
+
+                <label for="msg">Сообщение</label>
+                <textarea id="msg" name="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="form-status" role="status"></p>
+        </section>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© <span id="year">2026</span> Анзана Лубсанова. Проект на HTML + CSS + JS.</p></footer>
+
+    <!-- КНОПКА «НАВЕРХ» -->
+    <button id="to-top" title="Наверх">↑</button>
+<!-- JAVASCRIPT (defer = выполнится после загрузки HTML) -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
